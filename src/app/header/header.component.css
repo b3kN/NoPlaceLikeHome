@@ -1,1 +1,31 @@
 /*styles for home content only*/
+h1 {
+  float: left;
+  font-size: 16pt;
+  font-family: 'Handlee', cursive;
+}
+
+.logo {
+  padding: 0 1em;
+  height: 100%;
+  text-align: center;
+  float: left;
+  display: table;
+}
+
+nav {
+  display: table;
+  height: 100%;
+}
+
+  nav a {
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    display: table-cell;
+    padding: 0 1em;
+  }
+
+    nav a.active {
+      background-color: rgba(0,0,60,0.15);
+    }
