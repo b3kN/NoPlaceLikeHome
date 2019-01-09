@@ -19,7 +19,6 @@ import { DevModuleModule } from './+dev-module';
 import { UserService } from './services/user.service';
 
 import '../styles/styles.scss';
-import '../styles/headings.css';
 
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
