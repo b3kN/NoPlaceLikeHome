@@ -7,7 +7,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
   <meta name="description" content="<%= htmlWebpackPlugin.options.metadata.description %>">
   <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
-  <% if (webpackConfig.htmlElements.headTags) { %> 
+  <% if (webpackConfig.htmlElements.headTags) { %>
   <%= webpackConfig.htmlElements.headTags %>
   <% } %>
 
@@ -18,13 +18,18 @@
   <% } %>
 
   <% if (htmlWebpackPlugin.options.gtmKey) { %>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','<%= htmlWebpackPlugin.options.gtmKey %>');</script>
+  <script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', '<%= htmlWebpackPlugin.options.gtmKey %>');</script>
   <% } %>
 
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 </head>
 
 <body>
