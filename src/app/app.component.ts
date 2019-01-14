@@ -21,10 +21,10 @@ export const ROOT_SELECTOR = 'app';
   `
 })
 export class AppComponent implements OnInit {
-  public name = 'Illustrious Online';
+  public name = 'No Place Like Home';
   public tipe = 'assets/img/tipe.png';
-  public twitter = 'https://www.github.com/b3kN/illustrious-site';
-  public url = 'https://www.github.com/b3kN/illustrious-site';
+  public twitter = 'https://www.github.com/b3kN/NoPlaceLikeHome';
+  public url = 'https://www.github.com/b3kN/NoPlaceLikeHome';
   public showDevModule: boolean = environment.showDevModule;
 
   constructor(
