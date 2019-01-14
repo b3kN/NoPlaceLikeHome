@@ -1,8 +1,9 @@
 /*styles for home content only*/
 h1 {
-  float: left;
-  font-size: 16pt;
+  color: #1296cc;
+  font-size: 1.5em;
   font-family: 'Handlee', cursive;
+  margin: 0;
 }
 
 .logo {
@@ -16,16 +17,36 @@ h1 {
 nav {
   display: table;
   height: 100%;
+  float: right;
+  margin-right: 1em;
 }
 
   nav a {
-    vertical-align: middle;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: #000;
     text-align: center;
     text-decoration: none;
-    display: table-cell;
-    padding: 0 1em;
   }
 
+    nav a:hover {
+      color: #1296cc;
+    }
+
+    nav a:visited:hover {
+      color: #1296cc;
+    }
+
     nav a.active {
-      background-color: rgba(0,0,60,0.15);
+      color: #1296cc;
+      background-color: #ede;
+    }
+
+      nav a.active:visited {
+        color: #1296cc;
+      }
+
+    nav a:visited {
+      text-decoration: none;
+      color: #000;
     }

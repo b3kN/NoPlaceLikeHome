@@ -1,18 +1,38 @@
-<div class="logo">
-  <h1 class="vert">No Place Like Home</h1>
-</div>
+<a [routerLink]="['./']">
+  <div class="logo">
+    <h1 class="vert">No Place Like Home</h1>
+  </div>
+</a>
 
 <nav>
-  <a [routerLink]=" ['./'] "
-      routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-    Home
-  </a>
-  <a [routerLink]=" ['./about'] "
-      routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-    About
-  </a>
-  <a *ngIf="showDevModule" [routerLink]=" ['./dev-module'] "
-      routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-    DevModule
-  </a>
+  <div class="vert">
+    <a [routerLink]="['./about']"
+       routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      About
+    </a>
+  </div>
+  <div class="vert">
+    <a [routerLink]="['./testimonials']"
+       routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      Testimonials
+    </a>
+  </div>
+  <div class="vert">
+    <a [routerLink]="['./contact']"
+       routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      Contact
+    </a>
+  </div>
+  <div class="vert">
+    <a [routerLink]="['./services']"
+       routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      Services & Pricing
+    </a>
+  </div>
+  <div class="vert">
+    <a *ngIf="showDevModule" [routerLink]="['./dev-module']"
+       routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      DevModule
+    </a>
+  </div>
 </nav>
