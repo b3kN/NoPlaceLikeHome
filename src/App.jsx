@@ -7,7 +7,7 @@ import Welcome from 'components/Welcome';
 const App = () => (
   <content>
     <app>
-      <Header title="Notest Place Like Home" />
+      <Header title="No Place Like Home" />
       <Welcome />
     </app>
   </content>
