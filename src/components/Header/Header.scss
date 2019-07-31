@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  margin-left: 0.5em;
+  width: 100%;
+
+  title {
+    display: block;
+    font-size: 1.5em;
+    width: 25%;
+  }
+   
+  sub-nav {
+    font-size: 1em;
+    width: 75%;
+
+    div {
+      display: inline-block;
+    }
+  }
+}
