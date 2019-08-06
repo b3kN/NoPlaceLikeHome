@@ -1,20 +1,42 @@
-nav {
-  display: flex;
-  margin-left: 0.5em;
+header {
+  display: inline-block;
   width: 100%;
+  background-color: rgba(111,222,777,0.5);
+  padding: 1em 0 1em 0.5em;
 
   title {
     display: block;
     font-size: 1.5em;
     width: 25%;
+    float: left;
   }
-   
-  sub-nav {
-    font-size: 1em;
-    width: 75%;
+
+  .navigation {
+    display: flex;
+    width: 40%;
+    float: right;
 
     div {
-      display: inline-block;
+      font-size: 1.2em;
+      flex: 1;
+      text-align: center;
+      margin-top: 0.2em;
+
+      a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        text-decoration: underline;
+      }
     }
   }
 }

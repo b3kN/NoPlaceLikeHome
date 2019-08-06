@@ -1,24 +1,26 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
+
 import './Header';
 
 const Header = (props) => (
-  <nav>
-    <title> {props.title} </title>
-    <sub-nav>
+  <header>
+    <title>{props.title}</title>
+    <div className="navigation">
       <div>
-        Home
+        <NavLink to="/">Home</NavLink>
       </div>
       <div>
-        About
+        <NavLink to="/about">About</NavLink>
       </div>
       <div>
-        Services
+        <NavLink to="/services">Services</NavLink>
       </div>
       <div>
-        Contact
+        <NavLink to="/contact">Contact</NavLink>
       </div>
-    </sub-nav>
-  </nav>
+    </div>
+  </header>
 );
 
 export default Header;
