@@ -1,16 +1,18 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import './assets/scss/App';
+
 import Header from 'components/Header';
-import Welcome from 'components/Welcome';
+import Content from 'components/Content';
+import Footer from 'components/Footer';
+
+import './assets/styles/App';
 
 const App = () => (
-  <content>
-    <app>
-      <Header title="No Place Like Home" />
-      <Welcome />
-    </app>
-  </content>
+  <div className="application">
+    <Header title="No Place Like Home" />
+    <Content />
+    <Footer />
+  </div>
 );
 
 export default hot(module)(App);
