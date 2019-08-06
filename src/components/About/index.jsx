@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './About';
+
 class About extends React.PureComponent {
   render() {
     return (
