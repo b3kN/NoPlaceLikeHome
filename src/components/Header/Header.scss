@@ -1,41 +1,71 @@
 header {
-  display: inline-block;
-  width: 100%;
-  background-color: rgba(111,222,777,0.5);
-  padding: 1em 0 1em 0.5em;
+  display: block;
+  height: 3em;
+  padding: 0 0 0.5em 5%;
 
   title {
-    display: block;
+    display: table;
     font-size: 1.5em;
-    width: 25%;
+    height: 100%;
     float: left;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .navigation {
-    display: flex;
-    width: 40%;
-    float: right;
+    display: inline-block;
+    height: 100%;
+    margin-left: 5%;
 
-    div {
+    a {
+      background-color: rgba(222, 222, 222, 0.7);
+      color: #777;
+      display: inline-block;
       font-size: 1.2em;
-      flex: 1;
       text-align: center;
-      margin-top: 0.2em;
+      box-shadow: 2px 2px 8px -1px;
+      text-decoration: none;
+      padding: 0.25em 1em 0.75em;
+      margin: 0.25em;
+      -webkit-transition: color 0.5s;
+      transition: color 0.5s;
 
-      a:link {
-        text-decoration: none;
+      span {
+        display: block;
+        height: 0.1em;
+        position: relative;
+        background-color: darkgrey;
+        bottom: -0.3em;
+        left: 0;
+        width: 100%;
+        -webkit-transition: background-color 0.5s;
+        transition: background-color 0.5s;
       }
 
-      a:visited {
-        text-decoration: none;
+      &.active {
+        color: rgb(168, 50, 93);
+
+        span {
+          background-color: rgb(168, 50, 93);
+        }
+
+        &:hover {
+          color: rgb(168, 50, 93);
+
+          span {
+            background-color: rgb(168, 50, 93);
+          }
+        }
       }
 
-      a:hover {
-        text-decoration: underline;
-      }
+      &:hover {
+        color: rgb(25, 193, 75);
 
-      a:active {
-        text-decoration: underline;
+        span {
+          background-color: rgb(25, 193, 75);
+        }
       }
     }
   }

@@ -5,20 +5,28 @@ import './Header';
 
 const Header = (props) => (
   <header>
-    <title>{props.title}</title>
+    <title>
+      <NavLink className="verticalAlign" to="/">
+        {props.title}
+      </NavLink>
+    </title>
     <div className="navigation">
-      <div>
-        <NavLink to="/">Home</NavLink>
-      </div>
-      <div>
-        <NavLink to="/about">About</NavLink>
-      </div>
-      <div>
-        <NavLink to="/services">Services</NavLink>
-      </div>
-      <div>
-        <NavLink to="/contact">Contact</NavLink>
-      </div>
+      <NavLink exact to="/" activeClassName="active">
+        Home
+          <span />
+      </NavLink>
+      <NavLink exact to="/about" activeClassName="active">
+        About
+          <span />
+      </NavLink>
+      <NavLink exact to="/services" activeClassName="active">
+        Services
+          <span />
+      </NavLink>
+      <NavLink exact to="/contact" activeClassName="active">
+        Contact
+          <span />
+      </NavLink>
     </div>
   </header>
 );
