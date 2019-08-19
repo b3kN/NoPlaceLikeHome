@@ -5,3 +5,8 @@ html, body, #root {
   margin: 0;
   padding: 0;
 }
+
+.verticalAlign {
+  display: table-cell;
+  vertical-align: middle;
+}
