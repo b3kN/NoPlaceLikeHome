@@ -4,6 +4,7 @@ import './Footer';
 
 const Footer = () => (
   <footer>
+    <span className="topper" />
     <div>
       <span className="bold">
         Footer Placeholder

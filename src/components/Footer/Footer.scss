@@ -1,10 +1,22 @@
 footer {
-  background-color: rgba(111,111,111,0.9);
   bottom: 0;
   left: 0;
   padding: 1em 0;
   position: absolute;
   width: 100%;
+
+  div {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .topper {
+    margin: 25px auto;
+    height: 1px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, rgb(168, 50, 93)));
+    display: block;
+    width: 90%;
+  }
 
   .bold {
     font-weight: bold;
