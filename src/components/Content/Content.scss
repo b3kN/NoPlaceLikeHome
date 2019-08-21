@@ -2,5 +2,9 @@ content {
   width: 90%;
   display: block;
   margin: 0 auto;
-  height: 100%;
+  height: auto;
+
+  &.scrolled {
+    margin: 18.5em auto 0;
+  }
 }

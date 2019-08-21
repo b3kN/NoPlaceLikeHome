@@ -10,7 +10,7 @@ import Contact from '../Contact';
 import './Content';
 
 const Content = () => (
-  <content>
+  <content id="contentWrapper">
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />

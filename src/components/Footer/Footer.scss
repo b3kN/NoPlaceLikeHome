@@ -1,9 +1,8 @@
 footer {
-  bottom: 0;
-  left: 0;
-  padding: 1em 0;
-  position: absolute;
+  padding: 0.5em 0;
   width: 100%;
+  background-color: white;
+  height: 4em;
 
   div {
     width: 85%;
@@ -11,9 +10,9 @@ footer {
   }
 
   .topper {
-    margin: 25px auto;
+    margin: 0.1em auto 0.5em;
     height: 1px;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, rgb(168, 50, 93)));
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #a8325d));
     display: block;
     width: 90%;
   }
