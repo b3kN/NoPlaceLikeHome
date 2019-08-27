@@ -3,6 +3,12 @@ footer {
   width: 100%;
   background-color: white;
   height: 4em;
+  max-width: 70em;
+
+  &.sticky {
+    position: absolute;
+    bottom: 0;
+  }
 
   div {
     width: 85%;
