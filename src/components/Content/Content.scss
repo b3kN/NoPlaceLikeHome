@@ -2,7 +2,7 @@ content {
   width: 90%;
   display: block;
   margin: 0 auto;
-  height: auto;
+  max-width: 70em;
 
   &.scrolled {
     margin: 18.5em auto 0;
