@@ -9,7 +9,7 @@ import './assets/styles/App';
 
 const App = () => (
   <div className="application">
-    <Header title="No Place Like Home" />
+    <Header />
     <Content />
     <Footer />
   </div>

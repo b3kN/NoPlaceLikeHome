@@ -1,6 +1,8 @@
 header {
   display: block;
   position: relative;
+  height: 20em;
+  background-color: rgba(111, 111, 111, 0.1);
 
   &.scrolled {
     position: fixed;
@@ -10,54 +12,48 @@ header {
     padding: 0.5em 0;
     background-color: rgba(255,255,255,0.9);
 
-    .banner {
-      height: 0;
-    }
-
     .navHolder {
       height: 3em;
-      width: 90%;
-      margin-left: 5%;
-      position: relative;
-      bottom: 0;
-    }
-  }
+      padding: 0;
 
-  .banner {
-    height: 18em;
-    background-color: rgba(111, 111, 111, 0.1);
+      title {
+        width: 6em;
+      }
+    }
   }
 
   .navHolder {
-    height: 3em;
+    height: 8em;
     width: 90%;
-    margin-left: 5%;
-    position: absolute;
-    bottom: 0.5em;
+    margin: 0 auto;
+    max-width: 70em;
+    padding-top: 12em;
 
     title {
       display: table;
       font-size: 1.5em;
       height: 100%;
       float: left;
+      width: 12em;
 
       a {
+        background-image: url('../../assets/img/nplhm-logo.png');
         text-decoration: none;
+        height: 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
       }
     }
 
     .navigation {
-      display: inline-block;
+      display: table;
       height: 100%;
-      float: right;
 
       a {
-        background-color: rgba(222, 222, 222, 0.7);
         color: #777;
-        display: inline-block;
         font-size: 1.2em;
         text-align: center;
-        box-shadow: 2px 2px 8px -1px;
+        text-shadow: 0 0 10px #777;
         text-decoration: none;
         padding: 0.25em 1em 0.75em;
         margin: 0.25em;
@@ -66,6 +62,7 @@ header {
 
         span {
           display: block;
+          box-shadow: 0 0 4px 1px darkgrey;
           height: 0.1em;
           position: relative;
           background-color: darkgrey;
@@ -77,26 +74,32 @@ header {
         }
 
         &.active {
-          color: rgb(168, 50, 93);
+          color: #a8325d;
+          text-shadow: 0 0 10px #a8325d;
 
           span {
-            background-color: rgb(168, 50, 93);
+            background-color: #a8325d;
+            box-shadow: 0 0 4px 1px #a8325d;
           }
 
           &:hover {
             color: rgb(168, 50, 93);
+            text-shadow: 0 0 10px #a8325d;
 
             span {
               background-color: rgb(168, 50, 93);
+              box-shadow: 0 0 4px 1px #a8325d;
             }
           }
         }
 
         &:hover {
           color: rgb(25, 193, 75);
+          text-shadow: 0 0 10px rgb(25, 193, 75);
 
           span {
             background-color: rgb(25, 193, 75);
+            box-shadow: 0 0 4px 1px rgb(25, 193, 75);
           }
         }
       }
