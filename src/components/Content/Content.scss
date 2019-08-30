@@ -1,10 +1,39 @@
 content {
-  width: 90%;
   display: block;
-  margin: 0 auto;
-  max-width: 70em;
+  width: 100%;
 
-  &.scrolled {
-    margin: 18.5em auto 0;
+  .container {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 70em;
+  }
+
+  .trips-full {
+    padding: 2.5em 0;
+    background-color: rgba(25, 193, 75, 0.7);
+
+    .trips-holder {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 70em;
+      display: flex;
+
+      div {
+        flex: 1 1 0;
+        margin-right: 1em;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        span {
+          font-size: 1.2em;
+          font-weight: 600;
+          margin-bottom: 0.75em;
+          display: block;
+        }
+      }
+    }
   }
 }
