@@ -3,16 +3,22 @@ footer {
   width: 100%;
   background-color: white;
   height: 4em;
-  max-width: 70em;
+  display: flex;
 
   &.sticky {
     position: absolute;
     bottom: 0;
   }
 
-  div {
-    width: 85%;
+  .footerContent {
+    width: 100%;
+    max-width: 80em;
     margin: 0 auto;
+
+    div {
+      width: 85%;
+      margin: 0 auto;
+    }
   }
 
   .topper {

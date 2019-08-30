@@ -28,11 +28,13 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className={this.state.stickyFooter} >
-        <span className="topper" />
-        <div>
-          <span className="bold">
-            Footer Placeholder
-          </span>
+        <div className="footerContent">
+          <span className="topper" />
+          <div>
+            <span className="bold">
+              Footer Placeholder
+            </span>
+          </div>
         </div>
       </footer>
     );
