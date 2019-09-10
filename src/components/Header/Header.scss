@@ -3,6 +3,8 @@ header {
   position: relative;
   height: 20em;
   background-color: rgba(111, 111, 111, 0.1);
+  -webkit-transition: height 0.1s;
+  transition: height 0.1s;
 
   &.scrolled {
     position: fixed;
@@ -10,7 +12,8 @@ header {
     width: 100%;
     height: 3.2em;
     padding: 0.5em 0;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 4px 4px darkgrey;
 
     .navHolder {
       height: 3em;
@@ -79,7 +82,6 @@ header {
 
           span {
             background-color: #a8325d;
-            box-shadow: 0 0 4px 1px #a8325d;
           }
 
           &:hover {
@@ -88,7 +90,6 @@ header {
 
             span {
               background-color: rgb(168, 50, 93);
-              box-shadow: 0 0 4px 1px #a8325d;
             }
           }
         }
@@ -99,7 +100,6 @@ header {
 
           span {
             background-color: rgb(25, 193, 75);
-            box-shadow: 0 0 4px 1px rgb(25, 193, 75);
           }
         }
       }

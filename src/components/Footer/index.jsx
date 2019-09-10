@@ -18,16 +18,17 @@ class Footer extends React.Component {
   toggleStickyFooter() {
     let headerHeight = document.getElementById("headerWrapper").clientHeight,
       contentHeight = document.getElementById("contentWrapper").clientHeight,
-      rootHeight = document.getElementById("root").clientHeight;
+      rootHeight = document.getElementById("root").clientHeight,
+      footerHeight = document.getElementById("footerWrapper").clientHeight;
 
     this.setState({
-      stickyFooter: contentHeight < rootHeight - headerHeight ? "sticky" : ""
+      stickyFooter: contentHeight < rootHeight - headerHeight - footerHeight ? "sticky" : ""
     });
   }
 
   render() {
     return (
-      <footer className={this.state.stickyFooter} >
+      <footer id="footerWrapper" className={this.state.stickyFooter} >
         <div className="footerContent">
           <span className="topper" />
           <div>
