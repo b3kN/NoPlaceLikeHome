@@ -1,1 +1,18 @@
-// TODO: Use this file for Home component styles
+.img-background {
+  background-size: contain;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+
+  &.home {
+    background-image: url('../../assets/img/home.png');
+  }
+
+  &.heart {
+    background-image: url('../../assets/img/heart.png');
+  }
+
+  &.camera {
+    background-image: url('../../assets/img/camera.png');
+  }
+}
