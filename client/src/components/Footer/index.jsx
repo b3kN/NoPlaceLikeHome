@@ -33,7 +33,7 @@ class Footer extends React.Component {
           <span className="topper" />
           <div>
             <span className="bold">
-              Footer Placeholder
+              Footer Placeholder test
             </span>
           </div>
         </div>
